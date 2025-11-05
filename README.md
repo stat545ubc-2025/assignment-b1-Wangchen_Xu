@@ -22,6 +22,8 @@ Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce9
 
 - **README.rmd** - *main README file for the whole project*
 
+- **AssignmentB1_files** - *some output plot in examples*
+
 ------------------------------------------------------------------------
 
 ## 😊 **How to Run `AssignmentB1.Rmd`**
@@ -30,11 +32,7 @@ Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce9
     Repo:
     <https://github.com/stat545ubc-2025/assignment-b1-Wangchen_Xu.git>
 
-2.  **Open the R Markdown file (mini-project-x.Rmd) in R Studio.**
+2.  **Open the R Markdown file (AssignmentB1.Rmd) in R Studio.**
 
-3.  **Installpackages datateachr, tidyverse**  
-    `install.packages("devtools")`  
-    `devtools::install_github("UBC-MDS/datateachr")`  
-    `install.packages("here")`
-
-4.  **Knit the mini-project-x.Rmd file to view the analysis in HTML**
+3.  **Installpackages**  
+    `install.packages(c("roxygen2", "testthat"))`
