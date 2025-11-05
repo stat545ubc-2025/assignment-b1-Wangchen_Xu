@@ -1,1 +1,40 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ZfRSGEKK)
+STAT 545B Assignment B1
+================
+
+## **README**
+
+- This repo is used for the **Assignment B1** in **STAT
+  545B**.Instruction of Assignment B1 can be found here:
+  <https://canvas.ubc.ca/courses/170035/files/42178437>.
+
+[![Review Assignment Due
+Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ZfRSGEKK)
+
+------------------------------------------------------------------------
+
+## 📚 **Folders in This Repository**
+
+- **AssignmentB1.Rmd** — *main files for Assignment B1*
+
+- **AssignmentB1.md** — *files for milestone2*
+
+- **README.md** - *main README file for the whole project*
+
+- **README.rmd** - *main README file for the whole project*
+
+------------------------------------------------------------------------
+
+## 😊 **How to Run `AssignmentB1.Rmd`**
+
+1.  **Clone this repository** to your local machine  
+    Repo:
+    <https://github.com/stat545ubc-2025/assignment-b1-Wangchen_Xu.git>
+
+2.  **Open the R Markdown file (mini-project-x.Rmd) in R Studio.**
+
+3.  **Installpackages datateachr, tidyverse**  
+    `install.packages("devtools")`  
+    `devtools::install_github("UBC-MDS/datateachr")`  
+    `install.packages("here")`
+
+4.  **Knit the mini-project-x.Rmd file to view the analysis in HTML**
