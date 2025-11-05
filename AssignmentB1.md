@@ -15,8 +15,9 @@ library(testthat)
 ```
 
 ``` r
-#' @title Evaluate a quadratic polynomial function y = a*x^2 + b*x + c
-#' @details
+#' @title 
+#' Evaluate a quadratic polynomial function y = a*x^2 + b*x + c
+#' @descriptions
 #' This function evaluates a quadratic equation given coefficients `a`, `b`, and `c`.
 #' It computes the numeric output y for each input value of `x`.
 #' The function includes options for handling missing values (na.rm).
@@ -51,7 +52,7 @@ return(y)
 
 ## Exercise 2: Document your Function.
 
-I have already include documentation in my code, which includes:  
+I have already included documentation in my code, which includes:  
 1. Title  
 2. Function description: In 1-2 brief sentences, describe what the
 function does.  
@@ -105,7 +106,7 @@ parabola.
 
 With an initial velocity = 19.6 m/s, and initial height = 0 m.  The
 acceleration a is the gravity of earth, which is -9.8 m/s^2.  
-The highest point supposed to be t = 2 because I made up the initial
+The highest point supposed to be t = 2s because I made up the initial
 speed to be 4 \* acceleration.  
 
 ``` r
@@ -115,3 +116,20 @@ plot(time, height, xlab = "Time (seconds)", ylab = "Height (meters)")
 ```
 
 ![](AssignmentB1_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+## Exercise 4: Test the Function
+
+Running examples is a good way of checking by-eye whether your function
+is working as expected. But, having a formal “yes or no” check is useful
+when you move on to other parts of your analysis.
+
+``` r
+test_that("the quadratic function works", {
+  expect_equal(quad_fx(0:4), c(0, 1, 4, 9, 16))
+  expect_equal(quad_fx(c(1,NA,3)), c(1, NA, 9))
+  expect_equal(quad_fx((c(1,NA,3)), na.rm = TRUE), c(1, 9))
+  expect_length(quad_fx((c(1,NA,NA)), na.rm = TRUE), 1L)
+})
+```
+
+    ## Test passed 🎉
